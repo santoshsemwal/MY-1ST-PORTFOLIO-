@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santosh Semwal-Education</title>
+    <link rel="stylesheet" href="Edu.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo"> Santosh Semwal</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+
+        <nav class="navbar" id="navMenu">
+            <a href="Home.html">Home</a>
+            <a href="skill.html">Skills</a>
+            <a href="Certificate.html">Certificates</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+        <section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline">
+        <div class="timeline-item">
+                <h3>B.Tech in Computer Science with specialization in Data Science</h3>
+                <span>2024 – Present | Vidya Jyothi Institute of Technology</span>
+                <p>Currently pursuing B.Tech specializing in Computer Science, learning core concepts of programming, DBMS, and web development.</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3>Intermediate (MPC)</h3>
+                <span>2022 – 2024 | Telangana Board | Sri Chaitanya Junior Kalasala</span>
+                <p>Completed intermediate with focus on Mathematics, Physics, and Chemistry.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h3> SSC</h3>
+                <span>2022| Rau's High School</span>
+                <p>Completed SSC with strong academic performance and interest in computers.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    color: #00ff80;
+    font-weight: bold;
+    text-shadow: 0 0 50px #00ff80;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    transform: translateY(-6px);
+    text-shadow: 0 0 15px #00ff80;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+    border-radius: 5px;
+}
+
+.certificates {
+    padding: 60px 40px;
+}
+
+.certificates h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #00ff80;
+    font-weight: bold;
+    text-shadow: 0 0 50px #00ff80;
+    margin-bottom: 40px;
+}
+
+.maincard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.maincard div {
+    transition: transform 0.3s ease;
+}
+
+.maincard div:hover {
+    transform: scale(1.05);
+}
+
+.maincard img {
+    width: 100%;
+    max-width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid rgb(14, 251, 14);
+    border-radius: 8px;
+    filter: blur(2px) brightness(0.5);
+    transition: 0.3s ease;
+}
+
+.maincard div:hover img {
+    filter: blur(1px) brightness(0.9);
+}
+
+.resume {
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.resume a {
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.4);
+    transition: 0.3s ease;
+}
+
+.resume a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(79, 70, 229, 0.6);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #000;
+        flex-direction: column;
+        width: 90%;
+        max-width: 260px;
+        padding: 15px;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .certificates {
+        padding: 40px 20px;
+    }
+
+    .certificates h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    .resume {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume a {
+        padding: 12px 26px;
+        font-size: 15px;
+    }
+}
